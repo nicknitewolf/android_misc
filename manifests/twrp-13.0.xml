@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="nicknitewolf/android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="github" revision="cm-13.0-twrp" />
+  <project name="nicknitewolf/android_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="github" revision="cm-13.0" />
+  <project name="nicknitewolf/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-13.0" />
+
+  <project name="nicknitewolf/android_device_wingtech_wt88047" path="device/wingtech/wt88047" remote="github" revision="cm-13.0-twrp" />
+  <project name="LineageOS/android_kernel_wingtech_msm8916" path="kernel/wingtech/msm8916" remote="github" revision="cm-13.0" />
+  <project name="nicknitewolf/proprietary_vendor_wingtech" path="vendor/wingtech" remote="github" revision="cm-13.0" />
+  <project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="cm-13.0" />
+
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+</manifest>

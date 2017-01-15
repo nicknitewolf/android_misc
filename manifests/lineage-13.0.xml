@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="UBERTC"
+          fetch="https://bitbucket.org/mdalexca"
+          revision="master" />
+
+  <remote name="msm7x30"
+          fetch="https://github.com"
+          review="review.msm7x30.org" />
+
+  <!-- kenzo projects -->
+  <project name="nicknitewolf/android_device_xiaomi_kenzo" path="device/xiaomi/kenzo" remote="github" revision="cm-13.0" />
+  <project name="nicknitewolf/android_device_xiaomi_msm8956-common" path="device/xiaomi/msm8956-common" remote="github" revision="cm-13.0" />
+  <project name="nicknitewolf/android_kernel_xiaomi_msm8956" path="kernel/xiaomi/msm8956" remote="github" revision="cm-13.0" />
+  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-13.0" />
+
+  <!-- wt88047 projects -->
+  <project name="LineageOS/android_device_wingtech_wt88047" path="device/wingtech/wt88047" remote="github" revision="cm-13.0" />
+  <project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" revision="cm-13.0" />
+  <project name="LineageOS/android_kernel_wingtech_msm8916" path="kernel/wingtech/msm8916" remote="github" revision="cm-13.0" />
+  <project name="TheMuppets/proprietary_vendor_wingtech" path="vendor/wingtech" remote="github" revision="cm-13.0" />
+
+  <!-- LegacyLG projects -->
+  <project name="nicknitewolf/android_device_lge_vee7" path="device/lge/vee7" remote="github" revision="cm-13.0" />
+  <project name="nicknitewolf/android_kernel_lge_msm7x27a" path="kernel/lge/msm7x27a" remote="github" revision="cm-13.0" />
+  <project name="nicknitewolf/proprietary_vendor_lge" path="vendor/lge/vee7" remote="github" revision="cm-13.0" />
+
+  <project name="LegacyLG/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm7x27a" revision="cm-13.0-caf-7x27a" />
+  <project name="LegacyLG/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x27a" revision="cm-13.0-caf-7x27a" />
+  <project name="LegacyLG/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x27a" revision="cm-13.0-caf-7x27a" />
+
+  <!-- LegacyHuawei projects -->
+  <project name="nicknitewolf/android_device_huawei_msm7x30-common" path="device/huawei/msm7x30-common" remote="github" revision="cm-13.0" />
+  <project name="LegacyHuawei/android_device_huawei_u8860" path="device/huawei/u8860" remote="github" revision="cm-13.0" />
+  <project name="LegacyHuawei/android_kernel_huawei_msm7x30" path="kernel/huawei/msm7x30" remote="github" revision="cm-13.0" />
+  <project name="LegacyHuawei/android_vendor_huawei" path="vendor/huawei" remote="github" revision="cm-13.0" />
+
+  <project name="msm7x30/android_device_qcom_msm7x30-common" path="device/qcom/msm7x30-common" remote="msm7x30" />
+  <project name="msm7x30/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+  <project name="msm7x30/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+  <project name="msm7x30/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm7x30" remote="msm7x30" revision="cm-13.0-caf-7x30" />
+
+  <!-- g2m projects -->
+  <project name="LineageOS/android_device_lge_g2m" path="device/lge/g2m" remote="github" />
+  <project name="LineageOS/android_device_lge_msm8226-common" path="device/lge/msm8226-common" remote="github" />
+  <project name="LineageOS/android_kernel_lge_msm8226" path="kernel/lge/msm8226" remote="github" />
+  <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="github" />
+
+
+  <!-- Common LineageOS projects -->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" />
+</manifest>

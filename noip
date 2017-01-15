@@ -1,0 +1,88 @@
+#!/bin/bash
+
+### BEGIN INIT INFO
+# Provides:       noip
+# Required-Start:    $local_fs $remote_fs $network $syslog $named
+# Required-Stop:     $local_fs $remote_fs $network $syslog $named
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the noip2
+# Description:       starts noip2 using start-stop-daemon
+### END INIT INFO
+
+DAEMON=/usr/local/bin/noip2
+DESC="NO-IP Dynamic DNS"
+NAME=noip
+SCRIPTNAME=/etc/init.d/$NAME
+
+PID=""
+
+function get_pid {
+   PID=`pidof noip2`
+}
+
+function stop {
+   get_pid
+   if [ -z $PID ]; then
+      echo "server is not running."
+      exit 1
+   else
+      echo -n "Stopping server.."
+      kill -9 $PID
+      sleep 1
+      echo ".. Done."
+   fi
+}
+
+
+function start {
+   get_pid
+   if [ -z $PID ]; then
+      echo  "Starting noip2.."
+      /usr/local/bin/noip2 &
+      get_pid
+      echo "Done. PID=$PID"
+   else
+      echo "server is already running, PID=$PID"
+   fi
+}
+
+function restart {
+   echo  "Restarting noip2.."
+   get_pid
+   if [ -z $PID ]; then
+      start
+   else
+      stop
+      sleep 5
+      start
+   fi
+}
+
+
+function status {
+   get_pid
+   if [ -z  $PID ]; then
+      echo "noip2 is not running."
+      exit 1
+   else
+      echo "noip2 is running, PID=$PID"
+   fi
+}
+
+case "$1" in
+   start)
+      start
+   ;;
+   stop)
+      stop
+   ;;
+   restart)
+      restart
+   ;;
+   status)
+      status
+   ;;
+   *)
+      echo "Usage: $0 {start|stop|restart|status}"
+esac
